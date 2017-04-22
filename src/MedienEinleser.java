@@ -138,7 +138,7 @@ class MedienEinleser
                 Kundennummer kundennummer = ermittleKundennummer(
                         naechsterToken(tokenizer));
 
-                Medium medium = leseMediumEin(tokenizer);
+                Medium medium = leseMediumEin(tokenizer);	//medium hat den statischen Typ Medium
                 Verleihkarte verleihkarte = null;
                 if (medium != null)
                 {
@@ -205,20 +205,20 @@ class MedienEinleser
             String spiellaenge = naechsterToken(tokenizer);
 
             medium = new CD(titel, kommentar, interpret,
-                    Integer.parseInt(spiellaenge));
+                    Integer.parseInt(spiellaenge));	//medium hat den statischen Typ Medium und den dynamischen Typ CD
         }
         else if (medienBezeichnung.equals("DVD"))
         {
             String regisseuer = naechsterToken(tokenizer);
             int laufzeit = Integer.valueOf(naechsterToken(tokenizer));
 
-            medium = new DVD(titel, kommentar, regisseuer, laufzeit);
+            medium = new DVD(titel, kommentar, regisseuer, laufzeit);	//medium hat den statischen Typ Medium und den dynamischen Typ DVD
         }
         else if (medienBezeichnung.equals("Videospiel"))
         {
             String system = naechsterToken(tokenizer);
 
-            // medium = new Videospiel(titel, kommentar, system);
+            medium = new Videospiel(titel, kommentar, system);	//medium hat den statischen Typ Medium und den dynamischen Typ Videospiel
         }
         return medium;
     }
