@@ -35,5 +35,14 @@ interface Medium
      * @ensure result != null
      */
     String getTitel();
+    
+    /**
+     * Gibt eine Textrepraesentation mit allen für das Medium relevanten Optionen wieder
+     * 
+     * @return Textrepraesentation des Mediums
+     * 
+     * @ensure result != null
+     */
+    String getFormatiertenString();
 
 }

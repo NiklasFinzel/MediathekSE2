@@ -99,5 +99,11 @@ class CD implements Medium
     {
         return _titel;
     }
+    
+    @Override
+    public String getFormatiertenString()
+    {
+    	return "CD" + ", " + _titel + ", " + _kommentar + ", " + _interpret + ", " + _spiellaenge + "\n";
+    }
 
 }

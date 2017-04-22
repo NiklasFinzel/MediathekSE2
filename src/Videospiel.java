@@ -80,5 +80,11 @@ class Videospiel implements Medium
     {
         return _titel;
     }
+    
+    @Override
+    public String getFormatiertenString()
+    {
+    	return "Videospiel" + ", " + _titel + ", " + _kommentar + ", " + _system + "\n";
+    }
 
 }
