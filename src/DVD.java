@@ -87,7 +87,6 @@ class DVD implements Medium
      */
     public String getRegisseur()
     {
-        assert _regisseur != null : "Nachbedingung verletzt: result !=null";
         return _regisseur;
     }
 

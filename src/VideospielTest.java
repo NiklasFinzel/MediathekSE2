@@ -21,8 +21,8 @@ public class VideospielTest
     @Test
     public void testGetMedienBezeichnung()
     {
-        String dvdBezeichnung = BEZEICHNUNG;
-        assertEquals(dvdBezeichnung, _videospiel1.getMedienBezeichnung());
+        String videospielBezeichnung = BEZEICHNUNG;
+        assertEquals(videospielBezeichnung, _videospiel1.getMedienBezeichnung());
     }
 
     @Test
@@ -35,7 +35,7 @@ public class VideospielTest
 
     @Test
     /*
-     * Von ein und der selben DVD kann es mehrere Exemplare geben, die von
+     * Von ein und dem selben Videospiel kann es mehrere Exemplare geben, die von
      * unterschiedlichen Personen ausgeliehen werden können.
      */
     public void testEquals()

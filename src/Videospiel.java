@@ -65,7 +65,6 @@ class Videospiel implements Medium
      */
     public String getSystem()
     {
-        assert _system != null : "Nachbedingung verletzt: result !=null";
         return _system;
     }
 
